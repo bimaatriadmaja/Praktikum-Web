@@ -1,0 +1,32 @@
+.bismillah{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 5% auto 0%;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    /transform: rotateX(10deg) rotateZ(10deg);/
+}
+body{
+    background: rgb(14, 2, 2);
+}
+img{
+    position: absolute;
+    object-fit: cover;
+    margin-top: 100px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    -webkit-box-reflect: below 0 linear-gradient(transparent,transparent,#0007)
+}
+.konten{
+    position: absolute;
+    transform-style: preserve-3d;
+    animation: putar 10s linear infinite;
+}
+@keyframes putar{
+    100%{
+        transform: rotateY(360deg)
+    }
+}
